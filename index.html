@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="switcher">
+    <button id="description_button" onclick="Description();">ОПИСАНИЕ</button>
+    <button id="tree_button" onclick="Tree();">ДЕРЕВО</button>
+</div>
+<div id="main">
+
+    <div class="description">
+        <div class="intro">
+            <img class="logo" src="img/logoforgp.png">
+            <div class="textblock text_to_right">
+            <h1>Задача?</h1>
+            <p>Создать приложение, которое поможет пользователям развить свой мозг.</p></div>
+        </div>
+        <div class="about">
+            <div class="textblock text_to_left">
+                <h1>«Brallel»? Почему так?</h1>
+                <p>Произошло от слияния слов «brain» и «parallel».</p>
+            </div>
+            <div class="textblock text_to_right" >
+                <h1>Как это работает?</h1>
+                <p>Пользователь учит отрывок из литературного источника. Затем он запускает таймер. Рассказывая наизусть стих, пользователь производит вычисления с числами на экране.</p>
+            </div>
+        </div>
+
+        <div class="textblock_center">
+            <h1 class="text_to_center">Интерфейс?</h1>
+            <p class="text_to_center">Ночная тема, статистика и другие плюшки.</p>
+        </div>
+        <div class="interface">
+            <div class="slider">
+                <button type="button" class="arrowleft" onclick="MoveToLeft();"><img src="img/arrowl.svg"> </button>
+                    <div class="slider_content">
+                        <img src="img/1.png" id="interface_img">
+                        <div class="textblock_slider">
+                        <h1 id="interface_H1">Новая тренировка:</h1>
+                        <p id="interface_p">Удобный счетчик действий и все такое.</p></div>
+                    </div>
+                <button type="button" class="arrowright" onclick="MoveToRight();"><img src="img/arrowr.svg"> </button>
+            </div>
+
+
+
+
+        </div>
+        <div class="download">
+            <div class="textblock_top text_to_center">
+                <h1>Где скачать?</h1>
+                <p>В данный момент доступен в виде приложения под Android.</p>
+            </div>
+            <a href="https://vk.com/mixeden"  ><img class="download_button" src="img/google-play-badge.png" width="30%"  alt="Google play" style="margin: auto;"></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</div>
+<div id="tree">
+    <p class="textblock_tree">«Сделать приложение для одновременного чтения поэм и счета в уме»</p>
+    <table border="1px" width="1px" style="border-color: gray; height: 100px;"></table>
+    <p class="textblock_tree">- Экран для стихов, чтобы пользователю не надо было выходить из приложения.</p>
+    <div class="lines1">
+    <table border="1px" width="1px" style="border-color: gray; height: 100px;"></table>
+    <hr noshade class="rotated_line">
+    </div>
+    <div class="texts1">
+    <p class="textblock_tree">- Счетчик оставшихся действий.</p>
+    <p class="textblock_tree">- Предзаписанные стихи.<br>(пользователь должен сам решать какие стихи читать</p></div>
+    <table  border="1px" width="1px" style="border-color: gray; height: 100px;"></table>
+
+    <p>timeline</p>
+    <p class="textblock_tree">- Синхронизация, обмен результатов с друзьями.</p>
+
+</div>
+</body>
+</html>
